@@ -1,0 +1,39 @@
+.modal{
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(41, 41, 41, 0.637);
+    height: 100vh;
+    width: 100%
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: auto;
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100px;
+
+}
+input{
+    margin: 10px;
+}
