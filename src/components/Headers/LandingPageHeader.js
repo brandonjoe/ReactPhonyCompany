@@ -24,6 +24,13 @@ import { Button, Container } from "reactstrap";
 // core components
 
 function LandingPageHeader() {
+  document.documentElement.classList.remove("nav-open");
+  React.useEffect(() => {
+    document.body.classList.add("index");
+    return function cleanup() {
+      document.body.classList.remove("index");
+    };
+  });
   let pageHeader = React.createRef();
 
   React.useEffect(() => {

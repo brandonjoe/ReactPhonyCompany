@@ -39,35 +39,13 @@ import SectionDark from "views/index-sections/SectionDark.js";
 import SectionLogin from "views/index-sections/SectionLogin.js";
 import SectionExamples from "views/index-sections/SectionExamples.js";
 import SectionDownload from "views/index-sections/SectionDownload.js";
+import LandingPage from "./examples/LandingPage";
 
 function Index() {
-  document.documentElement.classList.remove("nav-open");
-  React.useEffect(() => {
-    document.body.classList.add("index");
-    return function cleanup() {
-      document.body.classList.remove("index");
-    };
-  });
+  
   return (
     <>
-      <IndexNavbar />
-      <IndexHeader />
-      <div className="main">
-        <SectionButtons />
-        <SectionNavbars />
-        <SectionNavigation />
-        <SectionProgress />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavaScript />
-        <SectionCarousel />
-        <SectionNucleoIcons />
-        <SectionDark />
-        <SectionLogin />
-        <SectionExamples />
-        <SectionDownload />
-        <DemoFooter />
-      </div>
+     <LandingPage />
     </>
   );
 }

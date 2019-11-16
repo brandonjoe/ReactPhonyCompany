@@ -2,6 +2,7 @@
   "name": "paper-kit-react",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://brandonjoe.github.io/ReactPhonyCompany/",
   "dependencies": {
     "classnames": "2.2.6",
     "emailjs": "^2.2.0",
@@ -22,6 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
     "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
@@ -44,5 +46,8 @@
   },
   "optionalDependencies": {
     "typescript": "3.5.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

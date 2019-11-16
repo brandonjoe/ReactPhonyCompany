@@ -95,24 +95,20 @@ function ProfilePage() {
             <div className="nav-tabs-wrapper">
               <Nav role="tablist" tabs>
                 <NavItem>
-                  <NavLink
+                  
                     className={activeTab === "1" ? "active" : ""}
                     onClick={() => {
                       toggle("1");
                     }}
                   >
                     Follows
-                  </NavLink>
+                  
                 </NavItem>
                 <NavItem>
-                  <NavLink
-                    className={activeTab === "2" ? "active" : ""}
-                    onClick={() => {
-                      toggle("2");
-                    }}
+                 
                   >
                     Following
-                  </NavLink>
+                 
                 </NavItem>
               </Nav>
             </div>

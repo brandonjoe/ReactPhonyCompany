@@ -26,6 +26,7 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 // pages
 import Index from "views/Index.js";
+import {BrowserRouter as Router} from  'react-router-dom';
 import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
@@ -33,8 +34,8 @@ import RegisterPage from "views/examples/RegisterPage.js";
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
-   <LandingPage />
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+  <Router basename={process.env.PUBLIC_URL}>
+  <LandingPage />
+</Router>, document.getElementById('root'));
+
+
